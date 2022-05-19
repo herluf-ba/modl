@@ -1,5 +1,5 @@
 # modl
-Application that is able to display an imported model
+`modl` is able to display 3D models!
 
 #### TODO
 Make an application that is able to display a 3D model. 
