@@ -1,7 +1,7 @@
 # modl
 Application that is able to display an imported model
 
-# Mission statement
+#### TODO
 Make an application that is able to display a 3D model. 
 It must:
 1. Be able to import .obj files
@@ -11,5 +11,8 @@ It must:
 5. Have configurable lighting
 
 
-### Roadmap
-Complete https://sotrh.github.io/learn-wgpu/
+- [x] Write TODO
+- [ ] Complete https://sotrh.github.io/learn-wgpu/
+- [ ] Import Bevy ECS
+- [ ] Make camera resource
+- [ ] Make camera resource into an uploadable shader uniform 
