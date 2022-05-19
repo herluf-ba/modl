@@ -9,7 +9,7 @@ It must:
 3. Support diffuse textures
 4. Support normal maps
 5. Have configurable lighting
-
+---
 
 - [x] Write TODO
 - [ ] Complete https://sotrh.github.io/learn-wgpu/
