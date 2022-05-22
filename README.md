@@ -12,7 +12,20 @@ It must:
 ---
 
 - [x] Write TODO
-- [ ] Complete https://sotrh.github.io/learn-wgpu/
-- [ ] Import Bevy ECS
-- [ ] Make camera resource
-- [ ] Make camera resource into an uploadable shader uniform 
+- Complete https://sotrh.github.io/learn-wgpu/
+  - [x] 3d Camera
+  - [x] Instancing
+  - [x] Depth buffer
+  - [ ] model loadiiiiiiing
+  - [ ] Lighting
+  - [ ] Normal mapping
+  - [ ] Even better camera
+- [ ] Make Renderer lib (with a bunch of state and stuff. Expose traits for uniforms and buffer descriptions)
+- [ ] Import Bevy ECS. Pass a world to renderer for rendering.
+
+
+Feature ideas:
+edge view?
+Smooth camera
+screen effects (bloom, vingette, etc.)
+imgui?
