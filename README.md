@@ -25,7 +25,8 @@ It must:
 
 
 Feature ideas:
-edge view?
-Smooth camera
+Frametime logging
+Shadows (via shadow mapping)
+Skybox (via Cubemaps)
 screen effects (bloom, vingette, etc.)
 imgui?
