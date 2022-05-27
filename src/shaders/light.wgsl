@@ -1,4 +1,5 @@
 struct Camera {
+    position: vec3<f32>;
     view_projection: mat4x4<f32>;
 };
 

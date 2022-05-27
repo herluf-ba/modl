@@ -116,17 +116,20 @@ impl CameraController {
 #[repr(C)]
 #[derive(Debug, Copy, Clone, bytemuck::Pod, bytemuck::Zeroable)]
 pub struct CameraUniform {
+    position: [f32; 4],
     view_projection: [[f32; 4]; 4],
 }
 
 impl CameraUniform {
     pub fn new() -> Self {
         Self {
+            position: [0.0; 4],
             view_projection: Mat4::IDENTITY.to_cols_array_2d(),
         }
     }
 
     pub fn update_view_projection(&mut self, camera: &Camera) {
+        self.position = [camera.eye.x, camera.eye.y, camera.eye.z, 0.0];
         self.view_projection = camera.build_view_projection().to_cols_array_2d();
     }
 }

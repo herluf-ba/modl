@@ -16,17 +16,24 @@ It must:
   - [x] 3d Camera
   - [x] Instancing
   - [x] Depth buffer
-  - [ ] model loadiiiiiiing
-  - [ ] Lighting
+  - [x] model loadiiiiiiing
+  - [x] Lighting
   - [ ] Normal mapping
   - [ ] Even better camera
 - [ ] Make Renderer lib (with a bunch of state and stuff. Expose traits for uniforms and buffer descriptions)
-- [ ] Import Bevy ECS. Pass a world to renderer for rendering.
+- [ ] Multiple lights
+- [ ] Import Bevy ECS. 
+  - [ ] Transform component
+  - [ ] Model component (just inline the mesh and material data)
+  - [ ] Light component
+  - [ ] Pass a world to renderer for rendering.
+  - [ ] Asset library (use references in Mesh/Material components)
 
 
 Feature ideas:
 Frametime logging
 Shadows (via shadow mapping)
 Skybox (via Cubemaps)
+pbr rendering stolen from bevy?
 screen effects (bloom, vingette, etc.)
 imgui?
