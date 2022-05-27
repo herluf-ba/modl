@@ -4,10 +4,6 @@ struct CameraUniform {
     view_projection: mat4x4<f32>;
 };
 
-[[group(1), binding(0)]] 
-var<uniform> camera: CameraUniform;
-
-
 struct InstanceInput {
     [[location(5)]] model_matrix_0: vec4<f32>;
     [[location(6)]] model_matrix_1: vec4<f32>;
@@ -25,20 +21,23 @@ struct VertexOutput {
     [[location(0)]] tex_coords: vec2<f32>;
 };
 
+[[group(1), binding(0)]] 
+var<uniform> camera: CameraUniform;
+
 [[stage(vertex)]]
 fn vs_main(
-    model: VertexInput,
+    vert: VertexInput,
     instance: InstanceInput
 ) -> VertexOutput {
-    let model_matrix = mat4x4<f32>(
+    let transform = mat4x4<f32>(
         instance.model_matrix_0,
         instance.model_matrix_1,
         instance.model_matrix_2,
         instance.model_matrix_3,
     );
     var out: VertexOutput;
-    out.tex_coords = model.tex_coords;
-    out.position = camera.view_projection * model_matrix * vec4<f32>(model.position, 1.0);
+    out.tex_coords = vert.tex_coords;
+    out.position = camera.view_projection * transform * vec4<f32>(vert.position, 1.0);
     return out;
 }
 
