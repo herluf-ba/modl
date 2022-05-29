@@ -22,6 +22,7 @@ It must:
   - [ ] Even better camera
 - [ ] Make Renderer lib (with a bunch of state and stuff. Expose traits for uniforms and buffer descriptions)
 - [ ] Multiple lights
+- [ ] rotation and scale in instances
 - [ ] Import Bevy ECS. 
   - [ ] Transform component
   - [ ] Model component (just inline the mesh and material data)
